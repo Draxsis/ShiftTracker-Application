@@ -13,31 +13,23 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = ShiftTimer.Application
 build_property.RootNamespace = ShiftTimer.Application
-build_property.ProjectDir = C:\Users\m.koolabadi\source\repos\ShiftTimer\ShiftTimer.Application\
+build_property.ProjectDir = C:\Users\Mostafa\Desktop\ShiftTimer\ShiftTimer.Application\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = false
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\m.koolabadi\source\repos\ShiftTimer\ShiftTimer.Application
+build_property.MSBuildProjectDirectory = C:\Users\Mostafa\Desktop\ShiftTimer\ShiftTimer.Application
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/m.koolabadi/source/repos/ShiftTimer/ShiftTimer.Application/App.razor]
+[C:/Users/Mostafa/Desktop/ShiftTimer/ShiftTimer.Application/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/m.koolabadi/source/repos/ShiftTimer/ShiftTimer.Application/Pages/Index.razor]
+[C:/Users/Mostafa/Desktop/ShiftTimer/ShiftTimer.Application/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/m.koolabadi/source/repos/ShiftTimer/ShiftTimer.Application/_Imports.razor]
+[C:/Users/Mostafa/Desktop/ShiftTimer/ShiftTimer.Application/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/m.koolabadi/source/repos/ShiftTimer/ShiftTimer.Application/Layout/MainLayout.razor]
-build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-nv6f2sid2r
-
-[C:/Users/m.koolabadi/source/repos/ShiftTimer/ShiftTimer.Application/Layout/NavMenu.razor]
-build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-uksogt2sb7

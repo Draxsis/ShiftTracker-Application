@@ -1,19 +1,42 @@
 ﻿@page "/"
-@using System.Timers
 
-<h1 class="text-center mt-5">Shift Timer</h1>
+<div class="container d-flex flex-column align-items-center justify-content-center min-vh-100 text-center">
+    <div class="card shadow p-4 rounded-4" style="max-width: 400px; width: 100%;">
+        <h1 class="mb-4">🚀 Shift Timer</h1>
 
-<div class="text-center mt-5">
-    @if (!shiftStarted)
-    {
-        <button class="btn btn-primary btn-lg" @onclick="StartShift">Start Shift</button>
-    }
-    else
-    {
-        <h3>Shift ends at: @endTime.ToString("HH:mm")</h3>
-        <h4>Remaining: @remainingTime</h4>
-        <button class="btn btn-danger mt-3" @onclick="ResetShift">Reset</button>
-    }
+        @if (!shiftStarted)
+        {
+            <button class="btn btn-success btn-lg w-100 animate__animated animate__fadeIn" @onclick="StartShift">
+                Start Shift
+            </button>
+        }
+        else
+        {
+            <div class="mb-3 animate__animated animate__fadeIn">
+                <h5 class="text-muted">Shift Ends At:</h5>
+                <h3 class="text-primary">@endTime.ToString("HH:mm")</h3>
+            </div>
+
+            <div class="mb-4">
+                <h5 class="text-muted">Time Remaining:</h5>
+                <h2 class="text-danger fw-bold display-6">@remainingTime</h2>
+            </div>
+
+            <div class="progress mb-4">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info"
+                     role="progressbar"
+                     style="width: @progressPercentage%"
+                     aria-valuenow="@progressPercentage"
+                     aria-valuemin="0" aria-valuemax="100">
+                    @progressPercentage%
+                </div>
+            </div>
+
+            <button class="btn btn-outline-danger w-100" @onclick="ResetShift">
+                Reset Shift
+            </button>
+        }
+    </div>
 </div>
 
 @code {
@@ -21,7 +44,8 @@
     private DateTime startTime;
     private DateTime endTime;
     private string remainingTime = "";
-    private System.Timers.Timer timer;
+    private int progressPercentage = 0;
+    private System.Timers.Timer? timer;
 
     void StartShift()
     {
@@ -29,7 +53,7 @@
         endTime = startTime.AddHours(8).AddMinutes(45);
         shiftStarted = true;
 
-        timer = new System.Timers.Timer(1000); // Update every second
+        timer = new System.Timers.Timer(1000);
         timer.Elapsed += UpdateRemainingTime;
         timer.Start();
     }
@@ -39,22 +63,26 @@
         shiftStarted = false;
         timer?.Stop();
         remainingTime = "";
+        progressPercentage = 0;
     }
 
-    void UpdateRemainingTime(object sender, ElapsedEventArgs e)
+    void UpdateRemainingTime(object? sender, System.Timers.ElapsedEventArgs e)
     {
         var now = DateTime.Now;
         var timeLeft = endTime - now;
+        var totalShift = endTime - startTime;
 
         if (timeLeft.TotalSeconds <= 0)
         {
             remainingTime = "Shift completed!";
+            progressPercentage = 100;
             timer?.Stop();
         }
         else
         {
             remainingTime = timeLeft.ToString(@"hh\:mm\:ss");
-            InvokeAsync(StateHasChanged); // Refresh UI
+            progressPercentage = 100 - (int)((timeLeft.TotalSeconds / totalShift.TotalSeconds) * 100);
+            InvokeAsync(StateHasChanged);
         }
     }
 }

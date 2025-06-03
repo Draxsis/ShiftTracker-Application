@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\m.koolabadi\\source\\repos\\ShiftTimer\\ShiftTimer.Application\\ShiftTimer.Application.csproj": {}
+    "C:\\Users\\Mostafa\\Desktop\\ShiftTimer\\ShiftTimer.Application\\ShiftTimer.Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\m.koolabadi\\source\\repos\\ShiftTimer\\ShiftTimer.Application\\ShiftTimer.Application.csproj": {
+    "C:\\Users\\Mostafa\\Desktop\\ShiftTimer\\ShiftTimer.Application\\ShiftTimer.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\m.koolabadi\\source\\repos\\ShiftTimer\\ShiftTimer.Application\\ShiftTimer.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Mostafa\\Desktop\\ShiftTimer\\ShiftTimer.Application\\ShiftTimer.Application.csproj",
         "projectName": "ShiftTimer.Application",
-        "projectPath": "C:\\Users\\m.koolabadi\\source\\repos\\ShiftTimer\\ShiftTimer.Application\\ShiftTimer.Application.csproj",
-        "packagesPath": "C:\\Users\\m.koolabadi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\m.koolabadi\\source\\repos\\ShiftTimer\\ShiftTimer.Application\\obj\\",
+        "projectPath": "C:\\Users\\Mostafa\\Desktop\\ShiftTimer\\ShiftTimer.Application\\ShiftTimer.Application.csproj",
+        "packagesPath": "C:\\Users\\Mostafa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mostafa\\Desktop\\ShiftTimer\\ShiftTimer.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\m.koolabadi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Mostafa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -42,23 +47,23 @@
           "dependencies": {
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
-              "version": "[8.0.1, )"
+              "version": "[8.0.0, )"
             },
             "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.1, )"
+              "version": "[8.0.0, )"
             },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.1, )",
+              "version": "[8.0.0, )",
               "autoReferenced": true
             },
             "Microsoft.NET.Sdk.WebAssembly.Pack": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.1, )",
+              "version": "[8.0.0, )",
               "autoReferenced": true
             }
           },
@@ -76,7 +81,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[8.0.1, 8.0.1]"
+              "version": "[8.0.0, 8.0.0]"
             }
           ],
           "frameworkReferences": {
@@ -84,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
