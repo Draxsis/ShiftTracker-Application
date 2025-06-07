@@ -2,4 +2,4 @@
 // This is because caching would make development more difficult (changes would not
 // be reflected on the first load after each change).
 self.addEventListener('fetch', () => { });
-/* Manifest version: dplsMq7C */
+/* Manifest version: n80EV2Av */

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BSrfZO8Jsu73NZmpIJE/OEfKeVlMtY3Yexc8YgJ/ZarRKODf+IsrpUCs4x3lM/kYdOdTIfgZs1Pav/fTd5rBZg==",
+  "dgSpecHash": "GW27cmxRH+ZVhENZe5d7jYdFg/RPK2hgQ1NY90z89CHcugEBLepbhbFIClqIQ2KLABSXe78OFHf7ijFRIpMIMw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mostafa\\Desktop\\ShiftTimer\\ShiftTimer.Application\\ShiftTimer.Application.csproj",
+  "projectFilePath": "C:\\Users\\Mostafa\\Desktop\\ShiftTracker-Application\\ShiftTimer.Application\\ShiftTimer.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mostafa\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.0\\microsoft.aspnetcore.authorization.8.0.0.nupkg.sha512",
     "C:\\Users\\Mostafa\\.nuget\\packages\\microsoft.aspnetcore.components\\8.0.0\\microsoft.aspnetcore.components.8.0.0.nupkg.sha512",

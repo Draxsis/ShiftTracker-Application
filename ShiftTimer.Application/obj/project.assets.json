@@ -2063,11 +2063,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mostafa\\Desktop\\ShiftTimer\\ShiftTimer.Application\\ShiftTimer.Application.csproj",
+      "projectUniqueName": "C:\\Users\\Mostafa\\Desktop\\ShiftTracker-Application\\ShiftTimer.Application\\ShiftTimer.Application.csproj",
       "projectName": "ShiftTimer.Application",
-      "projectPath": "C:\\Users\\Mostafa\\Desktop\\ShiftTimer\\ShiftTimer.Application\\ShiftTimer.Application.csproj",
+      "projectPath": "C:\\Users\\Mostafa\\Desktop\\ShiftTracker-Application\\ShiftTimer.Application\\ShiftTimer.Application.csproj",
       "packagesPath": "C:\\Users\\Mostafa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mostafa\\Desktop\\ShiftTimer\\ShiftTimer.Application\\obj\\",
+      "outputPath": "C:\\Users\\Mostafa\\Desktop\\ShiftTracker-Application\\ShiftTimer.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

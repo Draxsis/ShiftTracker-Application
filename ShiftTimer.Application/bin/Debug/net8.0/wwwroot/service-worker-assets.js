@@ -33,10 +33,6 @@
       "url": "manifest.webmanifest"
     },
     {
-      "hash": "sha256-enKgCMkYmCpfEcmg6Annbmc40VZ\/A6aYYSQjZfVn2cU=",
-      "url": "sample-data\/weather.json"
-    },
-    {
       "hash": "sha256-rcIWTVNnYus6VWf2Z2U1g\/JzlC07Ym02cFjHtI59Xsc=",
       "url": "_framework\/blazor.webassembly.js"
     },
@@ -853,5 +849,5 @@
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "dplsMq7C"
+  "version": "n80EV2Av"
 };
