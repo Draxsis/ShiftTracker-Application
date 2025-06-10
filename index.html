@@ -1,64 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shift Tracker</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shift Tracker</title>
 
-    <!-- Tailwind CSS JIT CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tailwind CSS via CDN (fine for simple setups) -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Babel Standalone for JSX/TSX transpilation in browser -->
-    <!-- This must come before your React application scripts -->
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <!-- Manifest & Icons -->
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="192x192" href="/logo192.png" />
+  <link rel="apple-touch-icon" sizes="512x512" href="/logo512.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="ShiftTrack" />
+  <meta name="theme-color" content="#0ea5e9" />
 
-    <link rel="manifest" href="./manifest.json">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-    <!-- Apple Touch Icons for iOS -->
-    <link rel="apple-touch-icon" sizes="192x192" href="./logo192.png">
-    <link rel="apple-touch-icon" sizes="512x512" href="./logo512.png">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="ShiftTrack">
-    <meta name="theme-color" content="#0ea5e9"> <!-- Tailwind sky-500 -->
-    <style>
-      /* Smooth font rendering */
-      body {
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-      }
-    </style>
-<script type="importmap">
-{
-  "imports": {
-    "react/": "https://esm.sh/react@^19.1.0/",
-    "react": "https://esm.sh/react@^19.1.0",
-    "react-dom/": "https://esm.sh/react-dom@^19.1.0/"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
+  <link rel="stylesheet" href="/index.css" />
+  <style>
+    body {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  </style>
 </head>
 <body class="bg-slate-900 text-slate-100">
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
 
-    <!-- Main application script, transpiled by Babel -->
-    <!-- data-presets tell Babel to use React and TypeScript presets -->
-    <!-- data-type="module" tells Babel to process this as an ES module -->
-    <script type="text/babel" data-presets="react,typescript" data-type="module" src="./index.tsx"></script>
-
-    <script>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('./sw.js').then(registration => {
-            console.log('SW registered: ', registration);
-          }).catch(registrationError => {
-            console.log('SW registration failed: ', registrationError);
-          });
+  <!-- Service Worker for PWA -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js').then(reg => {
+          console.log('SW registered:', reg);
+        }).catch(err => {
+          console.log('SW registration failed:', err);
         });
-      }
-    </script>
-<script type="module" src="/index.tsx"></script>
+      });
+    }
+  </script>
+
+  <!-- Correct Vite Entry Point -->
+  <script type="module" src="/src/main.tsx"></script>
 </body>
 </html>
