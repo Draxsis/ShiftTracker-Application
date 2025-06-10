@@ -5,7 +5,8 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
 
   return {
-    base: '/', 
+    plugins: [react()],
+    base: '/ShiftTracker-Application/',
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),
