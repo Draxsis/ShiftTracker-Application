@@ -5,7 +5,7 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
 
   return {
-    base: '/ShiftTracker-Application/', 
+    base: '/', 
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),
