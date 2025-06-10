@@ -1,0 +1,5 @@
+
+{
+  "name": "Shift Tracker PWA",
+  "description": "A simple Progressive Web Application to track 8 hour and 45 minute work shifts. It features a countdown timer and displays the shift's end time."
+}
